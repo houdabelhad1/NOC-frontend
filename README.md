@@ -1,1 +1,5 @@
-# NOC-frontend
+<<<<<<< HEAD
+(Version locale)
+=======
+(Version distante)
+>>>>>>> main

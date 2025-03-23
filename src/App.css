@@ -1,0 +1,116 @@
+/* Custom CSS for the healthcare website */
+
+/* General Styles */
+body {
+  font-family: "Inter", sans-serif;
+  color: #333;
+}
+
+/* Navbar adjustments */
+.navbar {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Card hover effects */
+.hover-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Service icons */
+.service-icon {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgba(var(--bs-primary-rgb), 0.1);
+}
+
+/* Testimonial cards */
+.testimonial-card {
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Nurse card */
+.nurse-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nurse-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Time slot selection */
+.time-slot {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.time-slot:hover {
+  background-color: rgba(var(--bs-primary-rgb), 0.05);
+  border-color: var(--bs-primary);
+}
+
+/* Calendar styles */
+.calendar-grid td {
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.calendar-grid td:hover {
+  background-color: rgba(var(--bs-primary-rgb), 0.05);
+}
+
+/* Custom Bootstrap color overrides */
+:root {
+  --bs-primary: #4285f4;
+  --bs-primary-rgb: 66, 133, 244;
+  --bs-secondary: #6c757d;
+  --bs-success: #34a853;
+  --bs-info: #4fc3f7;
+  --bs-warning: #fbbc05;
+  --bs-danger: #ea4335;
+  --bs-light: #f8f9fa;
+  --bs-dark: #343a40;
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide-up {
+  animation: slideUp 0.5s ease-out;
+}
+
